@@ -1,0 +1,649 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Styling for clickable announcement banner */
+.top-announcement {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+}
+
+.announcement-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.announcement-link:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+/* Learn More Button */
+.learn-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.learn-button:hover {
+    background-color: #45a049;
+}
+
+/* Header/Nav styling */
+.navbar {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #4CAF50;
+    position: relative;
+    z-index: 20;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+    margin: 0;
+    padding: 5px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.desktop-menu {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.desktop-menu ul {
+    display: flex;
+    gap: 30px;
+}
+
+.desktop-menu ul li {
+    list-style-type: none;
+}
+
+.desktop-menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.desktop-menu ul li a:hover {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+/* Adjust header icons */
+.header-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.header-icons a {
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.header-icons a .cart-count {
+    margin-left: 5px;
+    font-size: 0.9em;
+    background-color: #000;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Mobile menu hidden by default */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 10px;
+    z-index: 10;
+}
+
+/* Hero Section styling */
+.hero-section {
+    padding: 50px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.farm-section, .herb-section {
+    position: relative;
+}
+/* Make the herb-section (with the Learn More button) span across both columns */
+.herb-section {
+    grid-column: span 2;
+    width: 100%;
+}
+/* Adjust the height of the herbs image */
+.herbs-image {
+    width: 100%;
+    max-height: 400px; /* Set a maximum height for the image */
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+.farm-image, .herbs-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Text styling for the farm section */
+.hero-text-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text-container h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-text-container p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Learn More Button */
+.learn-more-button {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.learn-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.learn-button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    /* Ensure header content is centered */
+ /* Adjust navbar content to fit better on mobile */
+ .navbar-content {
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box; /* Ensure padding fits within the container */
+}
+
+    .logo {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start; /* Ensure logo aligns with the start */
+        margin-left: 10px; /* Add slight margin for spacing */
+    }
+  /* Adjust the gap and padding for header icons */
+  .header-icons {
+    justify-content: flex-end;
+    gap: 10px; /* Reduce gap between icons */
+    padding-right: 10px; /* Add a small padding to the right */
+}
+
+    .header-icons a {
+        font-size: 1.2em; /* Adjust icon size */
+    }
+
+    .header-icons a .cart-count {
+        padding: 2px 6px; /* Ensure the cart count is still visible */
+        font-size: 0.9em; /* Slightly adjust the font size */
+    }
+
+    .mobile-menu ul {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .mobile-menu ul li {
+        margin-bottom: 15px;
+        font-size: 1.2em;
+    }
+
+    .learn-more-button {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 20px auto;
+        width: fit-content; /* Adjust for better fit */
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Reduce gap between elements */
+    }
+
+    .farm-section, .herb-section {
+        width: 90%;
+    }
+
+/* Ensure images are responsive and don't overflow */
+.farm-image, .herbs-image {
+    width: 100%; /* Ensure images fit within screen */
+    height: auto;
+    max-height: 250px; /* Reduce image height for mobile */
+    object-fit: cover; /* Maintain aspect ratio and cover */
+}
+/* Adjust the padding for the hero text container */
+.hero-text-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center; /* Center align text for mobile */
+}
+
+    .hero-text-container h1 {
+        font-size: 2em; /* Reduced size for better fit */
+    }
+
+    .hero-text-container p {
+        font-size: 1.1em;
+        line-height: 1.5;
+    }
+
+/* Ensure the logo is fully responsive */
+.logo img {
+    max-width: 100%; /* Prevent the logo from overflowing */
+    height: auto;
+}
+    .desktop-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+ /* Ensure desktop menu fits within mobile screens */
+ .desktop-menu ul {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.desktop-menu ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.desktop-menu ul li a {
+    font-size: 1.2em;
+}
+
+    .header-icons {
+        justify-content: center; /* Center align the icons */
+        gap: 15px;
+    }
+
+    .header-icons a {
+        font-size: 1.3em; /* Adjust size for mobile */
+    }
+    footer {
+        width: 100%; /* Ensure the footer covers the full width */
+        padding: 20px 0; /* Remove side padding for full horizontal extension */
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 20px;
+        width: 100%; /* Ensure content also spans full width */
+    }
+
+    .contact-info {
+        margin-bottom: 15px;
+        font-size: 1.1em;
+        width: 100%; /* Ensure it spans the full width */
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        width: 100%; /* Make sure social icons also cover the full width */
+    }
+
+    .social-icons a {
+        font-size: 1.3em;
+        color: #fff;
+    }
+
+    .social-icons a:hover {
+        color: #FFD700;
+    }
+}
+
+
+/* this is the new product section
+
+/* Product Section Styling */
+.product-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.product-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #4CAF50;
+}
+
+.product-card p {
+    padding: 15px;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* Hide scrollbar for horizontal scrolling container */
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+.horizontal-scroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* Initial Zoom-Out Style for zoomText */
+#zoomText {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+/* Zoom-In Effect Applied by JavaScript */
+#zoomText.zoom-in {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
+/* this the css for the connect and learn pages
+
+/* styles.css */
+.connect-hero, .learn-hero {
+    padding: 60px;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+.connect-hero h1, .learn-hero h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+.contact-options, .learn-content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+}
+.contact-card img, .learn-card img {
+    width: 100%;           /* Ensures the image takes up the full width of the container */
+    height: auto;          /* Maintains the aspect ratio while adjusting the height */
+    max-height: 250px;     /* Limits the maximum height for consistency */
+    object-fit: contain;   /* Ensures the full image is visible without cropping */
+    border-radius: 10px 10px 0 0;  /* Keeps the rounded corners */
+    display: block;        /* Eliminates extra space around the image */
+    padding: 5px;          /* Adds a small padding to separate the image from edges */
+    margin: 0 auto;        /* Centers the image horizontally */
+}
+
+.contact-card:hover img, .learn-card:hover img {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+
+
+.contact-button, .learn-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover, .learn-button:hover {
+    background: #45a049;
+}
+
+
+.hidden {
+    display: none;
+}
+
+#fullImageSection {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#fullImageSection img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Keyframes for typing effect */
+@keyframes typingEffect {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Styles for loading screen and logo */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 50%;
+}
+
+#loading-logo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#loading-text {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #000;
+    width: 0;
+    animation: typingEffect 2s steps(30, end) forwards;
+}
+
+
+#fullImageSection {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#fullImageSection img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+
+/* Add CSS for the product page link with better styling */
+#productPageLink {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#productPageLink:hover {
+    background-color: #45a049;
+}

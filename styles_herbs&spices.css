@@ -1,0 +1,415 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.navbar .logo img {
+    height: 60px;
+}
+
+.desktop-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.desktop-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background-color: #f0f0e8;
+}
+
+.hero-content {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-image {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #2c6a37;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    color: #88b04b;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+.products-section {
+    margin: 40px;
+}
+
+.products-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c6a37;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    color: #2c6a37;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.product-item .price {
+    font-weight: bold;
+    color: #e63946;
+    margin-top: 10px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.social-icons a {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.social-icons a:hover {
+    color: #FFD700;
+}
+
+/* Herbs & Spices Page Styling */
+.herbs-hero {
+    padding: 60px;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+.herbs-hero h1 {
+    font-size: 3em;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.herbs-hero h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.herbs-hero p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.products-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.products-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product-item {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #4CAF50;
+}
+
+.product-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 15px 0;
+}
+
+.product-item p {
+    font-size: 1em;
+    color: #555;
+    padding: 0 10px 20px;
+}
+
+.product-item .price {
+    font-size: 1.2em;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#productPageLink {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#productPageLink:hover {
+    background-color: #45a049;
+}
+
+/* Mobile View Enhancements for Herbs & Spices Page */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        font-size: 0.9em;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .logo {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .desktop-menu ul {
+        display: grid;
+        grid-template-columns: 2fr 3fr; /* Create two columns */
+        gap: 10px; /* Add more space between each button */
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .desktop-menu ul li {
+        list-style: none;
+        text-align: center;
+    }
+
+    .desktop-menu ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #fff; /* White text for better contrast */
+        font-size: 1.2em;
+        display: block;
+        padding: 15px; /* Increase padding to make the buttons larger */
+        transition: background-color 0.3s, color 0.3s;
+        background-color: #2c6a37; /* Background color for individual buttons */
+        border-radius: 5px; /* Rounded edges for better visual distinction */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for button separation */
+    }
+
+    .desktop-menu ul li a:hover {
+        background-color: #45a049; /* Hover effect for better interactivity */
+        color: #f8f8f8;
+    }
+    .navbar-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .hero-text h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    .hero-image {
+        width: 90%;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    .products-section {
+        padding: 20px;
+    }
+
+    .products-section h2 {
+        font-size: 2em;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .product-item {
+        padding: 10px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-item img {
+        height: 150px;
+    }
+
+    .product-item h3 {
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+
+    .product-item p {
+        font-size: 0.9em;
+        padding: 0 5px;
+    }
+
+    .product-item .price {
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    .footer-content {
+        gap: 10px;
+    }
+
+    .social-icons {
+        gap: 10px;
+        padding-top: 5px;
+    }
+
+    .contact-info {
+        font-size: 0.9em;
+    }
+
+    .social-icons a {
+        font-size: 1.2em;
+    }
+}
